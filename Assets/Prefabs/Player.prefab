@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 4719249333131167441}
   - component: {fileID: 8129148998482865524}
   - component: {fileID: 6171233654616228822}
+  - component: {fileID: 1983653823123962127}
+  - component: {fileID: 8150901283481158147}
+  - component: {fileID: 3920852052188673366}
   - component: {fileID: 212467427727806400}
   - component: {fileID: 212467427727806399}
   m_Layer: 0
@@ -74,9 +77,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1000
+  m_SortingLayerID: 1639086183
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 50df7ee92e6fc40c3a12f8bd6ca02a94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6773b71f390efc44828fdf5d06d068a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileAttack: {fileID: 3920852052188673366}
 --- !u!114 &6171233654616228822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +118,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.3
   rb: {fileID: 212467427727806400}
+--- !u!114 &1983653823123962127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866482470718405357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccfaaba18ec8624d89d7d29e0af84f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 8129148998482865524}
+--- !u!114 &8150901283481158147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866482470718405357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09b07d04eb8448f82d78e0c553bc7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3920852052188673366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866482470718405357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a903678b31c47f6b92458ad3625fa7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1572843045995652381, guid: 96d66aa1887e0a14cbfed08830692923, type: 3}
+  attackSpeed: 5
+  attackCooldown: 0.1
 --- !u!50 &212467427727806400
 Rigidbody2D:
   serializedVersion: 4
