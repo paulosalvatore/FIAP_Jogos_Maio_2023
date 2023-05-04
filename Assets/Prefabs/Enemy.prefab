@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1104696794025303340}
   - component: {fileID: 307463385872615792}
   - component: {fileID: 5393188380398949179}
+  - component: {fileID: 8464794074316842298}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5863903214099569181}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.731433, y: 0.7744461, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -149,3 +150,16 @@ PolygonCollider2D:
       - {x: -0.096331716, y: -0.05094108}
       - {x: -0.0021990538, y: 0.21286619}
       - {x: 0.10142863, y: -0.05147046}
+--- !u!114 &8464794074316842298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863903214099569181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ad0ecce57d2424688cc2c8794de2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSystem: {fileID: 307463385872615792}

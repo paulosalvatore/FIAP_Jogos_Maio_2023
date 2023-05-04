@@ -11,6 +11,12 @@ public class HealthSystem : MonoBehaviour
 
     public UnityEvent onDeath;
 
+    public void SetStats(float health)
+    {
+        maxHealth = health;
+        _currentHealth = health;
+    }
+
     private void Start()
     {
         _currentHealth = maxHealth;
