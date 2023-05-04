@@ -12,7 +12,8 @@ public class PlayerBattleController : MonoBehaviour
 
     private void Attack()
     {
-        var targetPosition = playerController.transform.position + Vector3.right * 10;
+        var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var targetPosition = new Vector3(mousePosition.x, mousePosition.y, 0);
 
         playerController.ProjectileAttack.TryAttack(targetPosition);
     }
